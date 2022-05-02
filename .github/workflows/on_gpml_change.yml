@@ -66,13 +66,13 @@ jobs:
     steps:
       - name: Checkout homologyConverterActions repo
         uses: actions/checkout@v2
-        
+ 
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
           distribution: 'temurin'
           java-version: '8'
-          
+
       - name: Install deps
         run: |
           wget https://github.com/hbasaric/homology.mapper.automated/releases/download/v1.0/HomologyMapperAuto-WithDependencies.jar

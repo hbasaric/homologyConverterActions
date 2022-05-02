@@ -102,7 +102,8 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add outputs/output_hsa-bt/WP*/WP*.{gpml}
+          git diff
+          git add outputs/output_hsa-bt/WP*/WP*.gpml
           if git diff --exit-code --staged; then
               echo "No changes"
           else

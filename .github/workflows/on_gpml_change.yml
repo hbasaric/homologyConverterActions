@@ -80,8 +80,8 @@ jobs:
       - name: Install deps
         run: |
           wget https://github.com/hbasaric/homology.mapper.automated/releases/download/v1.0/HomologyMapperAuto-WithDependencies.jar
+          wget https://zenodo.org/record/6502115/files/Hs_Derby_Ensembl_105.bridge?download=1
           wget https://github.com/hbasaric/homologyConverterActions/tree/main/properties/autorun.properties
-
       - name: Cache dependencies
         uses: actions/cache@v2
         with:

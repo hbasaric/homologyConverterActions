@@ -96,7 +96,7 @@ jobs:
             wpid="$(basename ""$f"" | sed 's/.gpml//')"
             echo "generating info and datanode files for $wpid ($f)"
             # TODO: Is the following correct? Is the authentication key correct?
-            java -jar HomologyMapperAuto-WithDependencies autorun.properties $wpid
+            java -jar HomologyMapperAuto-WithDependencies.jar autorun.properties $wpid
           done
           
       - name: Commit report

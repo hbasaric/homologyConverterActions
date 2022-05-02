@@ -72,7 +72,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '8'
-
       - name: Install deps
         run: |
           wget https://github.com/hbasaric/homology.mapper.automated/releases/download/v1.0/HomologyMapperAuto-WithDependencies.jar

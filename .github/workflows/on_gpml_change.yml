@@ -65,7 +65,7 @@ jobs:
     # only run if gpmls were added or modified
     if: ${{needs.changed-gpmls.outputs.added-modified}}
     steps:
-      - name: Checkout wikipathways-database repo
+      - name: Checkout homologyConverterActions repo
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
@@ -79,9 +79,9 @@ jobs:
           
       - name: Install deps
         run: |
-          wget https://github.com/hbasaric/homology.mapper.automated/releases/download/v1.0/HomologyMapperAuto-WithDependencies.jar
+          wget https://github.com/wikipathways/homology.mapper.automated/releases/download/v1.0/HomologyMapperAuto-WithDependencies.jar
           wget https://zenodo.org/record/6502115/files/Hs_Derby_Ensembl_105.bridge?download=1
-          wget https://github.com/hbasaric/homologyConverterActions/tree/main/properties/autorun.properties
+          wget https://github.com/wikipathways/homologyConverterActions/tree/main/properties/autorun.properties
       - name: Cache dependencies
         uses: actions/cache@v2
         with:

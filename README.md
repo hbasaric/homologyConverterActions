@@ -8,6 +8,6 @@ The workflow run installs the necessary dependency; Hs_Derby_Ensembl_105.bridge 
 
 The line java -jar HomologyMapperAuto-WithDependencies.jar properties/autorun.properties $wpid runs the automated Local Homology Converter (https://github.com/hbasaric/homology.mapper.automated/). The converted pathway will only be committed if the conversion rate is greater than 80%.
 
-Two arguments are provided to the java application; the autorun.properties file which specifies run configurations, as well as the WP ids for the pathways that were changed or added to the /pathways folder. The WP ids are determined by the 
+Two arguments are provided to the java application; the autorun.properties file which specifies run configurations, as well as the WP ids for the pathways that were changed or added to the /pathways folder. The WP ids are determined by the yml script, in the "Get changed files" step.
 
 All required inputs are contained within this repository (in the /genes and /homology folders).

@@ -60,7 +60,7 @@ jobs:
           fi
           
   metadata:
-    runs-on: ubuntu-latest
+    runs-on: Windows-latest
     needs: changed-gpmls
     # only run if gpmls were added or modified
     if: ${{needs.changed-gpmls.outputs.added-modified}}
